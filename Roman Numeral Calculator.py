@@ -3,7 +3,7 @@ print()
 
 
 def menu():
-    # This function displays menu interface to the user
+    # This function displays the menu interface to the user
     print('Please select from the following:\n')
     print('A - Add two Roman Numerals')
     print('S - Subtract two Roman Numerals')
@@ -37,7 +37,7 @@ def value(roman):
         return 1000
 
 
-# This function takes the roman numeral and return true if numeral is valid and false if roman is invalid
+# This function takes the roman numeral and returns true if the roman numeral is valid and false if invalid
 def isValidRoman(roman):
     roman = roman.upper()
     # Import the regular expression module
@@ -57,7 +57,7 @@ def isValidRoman(roman):
     # Return the value of the boolean expression for the roman parameter
     return (bool(re.match(subtractive_notation, roman.upper())))
 
-
+# getRomanN1/N2 both prompt the user to enter valid roman numerals
 def getRomanN1():
     while True:
         # Prompt user to input the first roman numeral
